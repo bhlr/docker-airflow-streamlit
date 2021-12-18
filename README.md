@@ -28,7 +28,8 @@ docker-compose up
 ## Airflow Configurations
 ##### .config/airflow.cfg
 Dags folder :
-` dags_folder = /usr/local/airflow/dags`
+` dags_folder = /usr/local/airflow/dags`   
+
 Paused dags
 > Note: `hide_paused_dags_by_default = False` is set in this proyect.
 
@@ -37,7 +38,8 @@ This proyect requireds a set of default connectios :
 * File sensor for folder monitor.
 * Mysql sensor for datawarehouse
 
-This conections are created by default on startup, to change this set the fiel 
+This conections are created by default on startup, to change this set the file  
+
 `files/conn.json`
 
 ## ETL dag's
@@ -51,6 +53,7 @@ Exists 3 etl dags for ingest data
 <p align="center">
   <img src="img/airflow.png" width="750" title="Example dashboard App">
 </p>
+   
 * Each dag performs the same process, it has a sensor file to load for Confirmed, dead, recovered respectively in the monitor folder.
 * When the presence of a file is detected, it is loaded into a panda dataframe.
 * Transformed to the desired structure 
