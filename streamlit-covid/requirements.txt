@@ -1,0 +1,3 @@
+jsonschema==3.2
+vega-datasets
+mysql-connector-python

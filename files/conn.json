@@ -1,0 +1,20 @@
+{
+  "mysql_db": {
+    "conn_type": "mysql",
+    "host": "db",
+    "login": "test",
+    "password": "test123",
+    "schema": "test",
+    "port": 3306,
+    "extra": null
+  },
+  "monitor_file": {
+    "conn_type": "File (path)",
+    "host": null,
+    "login": null,
+    "password": null,
+    "schema": null,
+    "port": null,
+    "extra": "{\"path\": \"/home/airflow/monitor\"}"
+  }
+}
